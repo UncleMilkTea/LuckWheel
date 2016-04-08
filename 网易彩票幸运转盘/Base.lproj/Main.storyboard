@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LuckyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="plh-BU-KVr">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="LuckyThreeButton" translatesAutoresizingMaskIntoConstraints="NO" id="mPy-kT-5vf">
+                                <rect key="frame" x="210" y="120" width="180" height="82"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5I-ED-7lx">
+                                <rect key="frame" x="267" y="120" width="67" height="67"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="88D-Jg-zbS"/>
+                                    <constraint firstAttribute="height" constant="67" id="pQK-JG-2mn"/>
+                                </constraints>
+                                <state key="normal" title="星座"/>
+                                <state key="highlighted" backgroundImage="LuckyMidPressed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67p-Ez-dRM">
+                                <rect key="frame" x="344" y="154" width="50" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="I8J-VA-R8X"/>
+                                    <constraint firstAttribute="height" constant="50" id="IFx-oz-YKM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="5注"/>
+                                <state key="selected" backgroundImage="LuckyRightPressed"/>
+                                <state key="highlighted" backgroundImage="LuckyRightPressed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tq8-6s-xBu">
+                                <rect key="frame" x="209" y="154" width="50" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="q38-5i-1vU"/>
+                                    <constraint firstAttribute="height" constant="50" id="wUa-9d-Xwz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="双色球"/>
+                                <state key="highlighted" backgroundImage="LuckyLeftPressed"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W5I-ED-7lx" firstAttribute="leading" secondItem="tq8-6s-xBu" secondAttribute="trailing" constant="8" id="4Vp-ec-Wtk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="plh-BU-KVr" secondAttribute="bottom" id="68C-vq-Lh3"/>
+                            <constraint firstItem="plh-BU-KVr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9Ka-3R-1xN"/>
+                            <constraint firstItem="67p-Ez-dRM" firstAttribute="leading" secondItem="W5I-ED-7lx" secondAttribute="trailing" constant="10" id="LHz-Cy-uTA"/>
+                            <constraint firstItem="tq8-6s-xBu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="154" id="SmD-f1-9zj"/>
+                            <constraint firstItem="tq8-6s-xBu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-66" id="V8N-7W-SbK"/>
+                            <constraint firstItem="W5I-ED-7lx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xzp-pk-MIh"/>
+                            <constraint firstItem="W5I-ED-7lx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="120" id="bjh-pa-ZMd"/>
+                            <constraint firstAttribute="trailing" secondItem="plh-BU-KVr" secondAttribute="trailing" id="epN-dJ-6GT"/>
+                            <constraint firstItem="plh-BU-KVr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="fvO-Mr-aQl"/>
+                            <constraint firstItem="67p-Ez-dRM" firstAttribute="centerY" secondItem="tq8-6s-xBu" secondAttribute="centerY" id="hKI-BZ-pUS"/>
+                            <constraint firstItem="mPy-kT-5vf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="iP9-wG-zlE"/>
+                            <constraint firstItem="mPy-kT-5vf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wBu-Uo-poJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="350"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LuckyBackground" width="320" height="368"/>
+        <image name="LuckyLeftPressed" width="49" height="49"/>
+        <image name="LuckyMidPressed" width="67" height="67"/>
+        <image name="LuckyRightPressed" width="48" height="48"/>
+        <image name="LuckyThreeButton" width="180" height="82"/>
+    </resources>
+</document>
